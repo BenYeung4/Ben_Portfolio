@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Project from "../Project";
 import Navigation from "../Navigation";
 import About from "../About";
 import Contact from "../Contact";
@@ -10,12 +10,12 @@ function Portfolio() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case "about":
+      case "About Me":
         return <About></About>;
-      case "contact":
+      case "Contact":
         return <Contact></Contact>;
-      //   case "portfolio":
-      //     return <Projects></Projects>;
+      case "Portfolio":
+        return <Project></Project>;
       //   case "resume":
       //     return <Resume></Resume>;
       default:

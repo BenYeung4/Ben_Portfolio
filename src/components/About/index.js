@@ -1,7 +1,7 @@
 import React from "react";
 
 //import of images
-//import profilePhoto from "../../Assets/images/profile.jpeg";
+import profilePhoto from "../../assets/images/profile.jpg";
 
 import { Col } from "react-bootstrap";
 
@@ -10,9 +10,9 @@ function About() {
     <section className="title">
       <div className="row justify-content-center" id="about-container">
         <Col lg={6} md={12}>
-          {/* <center>
-          <img src={profilePhoto} className="selfie" alt="ben-profile" />
-        </center> */}
+          <center>
+            <img src={profilePhoto} className="selfie" alt="ben-profile" />
+          </center>
 
           <p class="name"> Benjamin Yeung</p>
           <p class="career">Full Stack Web Developer</p>
