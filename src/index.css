@@ -140,6 +140,13 @@ p {
   font-weight: bold;
 }
 
+.navActive {
+  color: green;
+}
+
+.home{
+  justify-content: left;
+}
 #port-icon {
   margin: 0px 20px;
   width: 30%;
