@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+*{
+
+  box-sizing: border-box;
+}
+
+#profilePhoto{
+  margin: auto 70px;
+}
+
+.name{
+  font-size: 4rem;
+  color: #044389;
+  display: flex;
+  justify-content: center;
+  align-content:center
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 2px;
+  height: 525px;
+  margin: 1rem;
+  position: relative;
+  width: 325px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+

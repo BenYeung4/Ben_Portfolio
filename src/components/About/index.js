@@ -18,7 +18,7 @@ function About() {
           <p class="career">Full Stack Web Developer</p>
           <h2 class="info">Who am I</h2>
           <p>
-            Hi, I'm Ben, nice to meet you! Please take a look aruond!
+            Hi, I'm Ben, nice to meet you! Please take a look around!
             <br></br>
             <br></br>
             I'm a web developer and software engineer with an extensive
