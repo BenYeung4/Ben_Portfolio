@@ -6,6 +6,8 @@
 AS AN employer looking for candidates with experience building single-page applications
 I WANT to view a potential employee's deployed React portfolio of work samples
 SO THAT I can assess whether they're a good candidate for an open position
+
+![Capture](https://user-images.githubusercontent.com/52897163/187128799-44b7ab29-fdb2-45fc-b13c-2b93fb397c18.JPG)
 ```
 
 ## Deployed Application
