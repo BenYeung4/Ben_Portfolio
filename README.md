@@ -31,6 +31,9 @@ https://benyeung4.github.io/Ben_Portfolio/
 
 ### `npm start`
 
+## Contributing:
+Google
+
 ## Tech:
 
 - React
