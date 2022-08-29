@@ -48,6 +48,10 @@ function ContactForm() {
   return (
     <section>
       <h1> Contact Me</h1>
+      <h1>
+        *UNDER CONSTRUCTION, BUT IF YOU LIKE TO REACH OUT TO ME, PLEASE CONTACT
+        ME THROUGH THE LINKIN ICON BELOW*
+      </h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

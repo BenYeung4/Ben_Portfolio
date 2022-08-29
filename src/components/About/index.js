@@ -11,18 +11,28 @@ function About() {
       <div className="row justify-content-center" id="about-container">
         <Col lg={6} md={12}>
           <center>
-            <img src={profilePhoto} className="selfie" alt="ben-profile" />
+            <img
+              src={profilePhoto}
+              className="selfie"
+              alt="ben-profile"
+              style={{
+                width: 375,
+                height: 425,
+                borderRadius: "20%",
+                overflow: "hidden",
+              }}
+            />
           </center>
 
           <p class="name"> Benjamin Yeung</p>
-          <p class="career">Full Stack Web Developer</p>
-          <h2 class="info">Who am I</h2>
+          <h2 class="career">Full Stack Web Developer 💻</h2>
+
           <p>
-            Hi, I'm Ben, nice to meet you! Please take a look around!
+            Hi, I'm Ben, nice to meet you! Please take a look around! ✌
             <br></br>
             <br></br>
             I'm a web developer and software engineer with an extensive
-            background in mortgage industry.
+            background in mortgage industry. 🏡
             <br></br>
             <br></br>
             After extensive period of guiding families achieve their dream
@@ -36,13 +46,14 @@ function About() {
             the creativity I am interested in and logic problem solving skills
             I've developed from my banking experiences. I’m currently seeking a
             full stack position where I can continue to develop and ease the
-            interface for the users.
+            interface for the users. 👨‍💻
             <br></br>
             <br></br>
-            During my spare time I enjoy boulder climbing, tennis, lifting
-            weights, cooking (especially food photography), anime, manga, games,
-            and horror movies. I’m always seeking for new challenges, currently
-            leveling up my JavaScript and app development. Let’s connect!
+            During my spare time I enjoy boulder climbing 🧗‍♂️, tennis 🎾, lifting
+            weights 🏋, cooking 🍳 (especially food photography) 📷, anime/manga
+            ⛩️, kdrama 🎭, games 🎮🎲, and horror movies 👻. I’m always seeking
+            for new challenges, currently leveling up my development. Let’s
+            connect!
             <br></br>
             <br></br>
           </p>

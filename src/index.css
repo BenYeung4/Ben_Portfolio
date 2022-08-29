@@ -12,7 +12,6 @@ code {
     monospace;
 }
 
-
 *{
 
   box-sizing: border-box;
@@ -42,3 +41,117 @@ code {
   text-align: left;
 }
 
+textarea {
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+p {
+  font-size: 22px;
+
+  font-weight: bold;
+  font-family: 'Helvetica', cursive;
+}
+
+#about-container, #image-container, .eduction-container {
+  margin: 0px 10px;
+}
+
+.key-title, .resume, .name, .title, .contact, .education {
+  font-weight: bold;
+  font-family: 'Helvetica', cursive;
+}
+
+
+.school-name {
+  font-weight: bolder;
+}
+
+/*project */
+.card {
+  border-radius: 2px;
+  height: 400px;
+  margin: 1rem;
+  position: relative;
+  width: 425px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+
+.card > .img-container {
+  height: 50%;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card> .img-container > img {
+  width: 100%; 
+  padding: 25px;
+  background-color: white;
+}
+
+.card > .content {
+  padding-right: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card > .content > ul {
+  list-style-type: none;
+}
+
+.card > .content > ul > li {
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.wrapper {
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.nav {
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#port-icon {
+  margin: 0px 20px;
+  width: 30%;
+  height: 50%;
+}
+
+.project-title {
+  font-Weight: bold;
+  font-family: 'Helvetica', cursive;
+}
+
+.project-icons {
+  justify-content: center;
+  align-content: center;
+}

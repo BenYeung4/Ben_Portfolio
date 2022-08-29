@@ -25,7 +25,7 @@ function ProjectCard(props) {
                   id="port-icon"
                 />
               </a>
-              <a href={props.deployedadd}>
+              <a href={props.deployedapp}>
                 <img
                   src="https://img.icons8.com/cute-clipart/344/cursor.png"
                   alt="app-icon"
