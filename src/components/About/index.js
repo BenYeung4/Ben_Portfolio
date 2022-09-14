@@ -25,27 +25,29 @@ function About() {
           </center>
 
           <p class="name"> Benjamin Yeung</p>
-          <h2 class="career">Full Stack Web Developer 💻</h2>
-
+          <h2 class="career" style={{ textAlign: "center" }}>
+            Full Stack Web Developer 💻
+          </h2>
+          <br></br>
           <p>
-            Hi, I'm Ben, nice to meet you! Please take a look around! ✌
+            Hi, nice to meet you! Please take a look around!✌
             <br></br>
             <br></br>
-            I'm a web developer and software engineer with an extensive
-            background in mortgage industry. 🏡
+            I'm a Full Stack Developer with an extensive background in mortgage
+            industry. 🏡
             <br></br>
             <br></br>
             After extensive period of guiding families achieve their dream
-            homes, I've transitioned to a full-stack software engineer with
-            substantial experience in JS, React, Node.js, HTML, Git, Express,
-            SQL, Heroku, and many other web technologies.
+            homes, I've transitioned to Full-Stack with substantial experience
+            in JS, React, Node.js, HTML, Git, Express, SQL, Heroku, and many
+            other web technologies.
             <br></br>
             <br></br>
             This door provides me the sense of achievement I've never
-            experienced in my life. Full-stack software development provides me
-            the creativity I am interested in and logic problem solving skills
-            I've developed from my banking experiences. I’m currently seeking a
-            full stack position where I can continue to develop and ease the
+            experienced in my life. Full-Stack development provides me the
+            creativity I am interested in and logic problem solving skills I've
+            developed from my banking experiences. I’m currently seeking a full
+            stack position where I can continue to develop and ease the
             interface for the users. 👨‍💻
             <br></br>
             <br></br>

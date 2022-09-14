@@ -7,21 +7,14 @@ import Self from "../../assets/images/Resume.pdf";
 function Resume() {
   return (
     <>
-      <h1 className="resume"> RESUME</h1>
-      <div class="resume-intro">
-        <Row>
-          <Col lg={8} md={12}>
-            Full Stack Web Developer, poesses techinical skills within the MERN
-            stack. Continuously learning and adapoting for the better future.
-          </Col>
-        </Row>
-      </div>
-
+      <h1 className="resume" style={{ textAlign: "center" }}>
+        Resume
+      </h1>
       <center>
         <Col lg={3} md={12} center>
           <a href={Self} download>
             <img
-              src="https://img.icons8.com/clouds/344/resume.png"
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-resume-recruitment-agency-flaticons-flat-flat-icons-2.png"
               alt="self"
             />
           </a>
@@ -33,11 +26,11 @@ function Resume() {
           <Col lg={4} md={12}>
             <h2 class="education">Education</h2>
             <p>
-              <span className="school-Name">
-                Columbia University Engineering Boot Camp
+              <span className="school-ame">
+                COLUMBIA UNIVERSITY ENGINEERING BOOT CAMP
               </span>
               <br></br>
-              Full Stack Boot Camp - Certification
+              FULL STACK BOOT CAMP - CERTIFICATE
               <br></br>
               <br></br>
               <span className="school-name">PENN STATE UNIVERSITY</span>

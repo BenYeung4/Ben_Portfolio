@@ -2,8 +2,17 @@ import React from "react";
 
 function Footer() {
   return (
-    <center>
-      <div className="page-footer" id="footer">
+    <footer className="page-footer" id="footer">
+      <center>
+        <h4>(&copy;) 2022 by Benjamin Yeung</h4>
+      </center>
+    </footer>
+  );
+}
+
+export default Footer;
+
+/*<div className="page-footer" id="footer">
         <a href="https://github.com/BenYeung4">
           <img
             src="https://img.icons8.com/clouds/344/github.png"
@@ -25,9 +34,4 @@ function Footer() {
             class="icon"
           />
         </a>
-      </div>
-    </center>
-  );
-}
-
-export default Footer;
+  </div>*/

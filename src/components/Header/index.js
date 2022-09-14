@@ -26,10 +26,12 @@ function Portfolio() {
 
   return (
     <div>
-      <Navigation
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
+      <header>
+        <Navigation
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      </header>
       <div>{renderPage()}</div>
     </div>
   );
