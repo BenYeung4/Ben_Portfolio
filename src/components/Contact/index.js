@@ -48,7 +48,7 @@ function ContactForm() {
 
   return (
     <section>
-      <h1 style={{ textAlign: "center" }}> Contact Info</h1>
+      <h1 style={{ textAlign: "center", marginTop: "30px" }}> Contact Info</h1>
       <center>
         <div>
           <a href="https://github.com/BenYeung4">
@@ -101,6 +101,12 @@ function ContactForm() {
           <li>Support Engineer</li>
         </ul>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </section>
   );
 }

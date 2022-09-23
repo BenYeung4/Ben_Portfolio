@@ -7,7 +7,7 @@ import Self from "../../assets/images/Resume.pdf";
 function Resume() {
   return (
     <>
-      <h1 className="resume" style={{ textAlign: "center" }}>
+      <h1 className="resume" style={{ textAlign: "center", marginTop: "30px" }}>
         Resume
       </h1>
       <center>
@@ -21,7 +21,8 @@ function Resume() {
           </a>
         </Col>
       </center>
-
+      <br />
+      <br />
       <div class="resume-container">
         <Row>
           <Col lg={4} md={12}>
@@ -64,6 +65,13 @@ function Resume() {
           </Col>
         </Row>
       </div>
+
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

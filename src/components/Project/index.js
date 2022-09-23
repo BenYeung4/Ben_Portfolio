@@ -53,7 +53,10 @@ function Projects() {
   return (
     <>
       <div className="project">
-        <h1 className="title" style={{ textAlign: "center" }}>
+        <h1
+          className="title"
+          style={{ textAlign: "center", marginTop: "30px" }}
+        >
           Full Stack Projects
         </h1>
       </div>
