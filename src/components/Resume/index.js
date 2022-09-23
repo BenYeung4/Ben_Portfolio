@@ -11,11 +11,12 @@ function Resume() {
         Resume
       </h1>
       <center>
-        <Col lg={3} md={12} center>
+        <Col lg={3} md={12}>
           <a href={Self} download>
             <img
               src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-resume-recruitment-agency-flaticons-flat-flat-icons-2.png"
               alt="self"
+              className="resume-icon"
             />
           </a>
         </Col>

@@ -20,12 +20,16 @@ function About() {
                 height: 425,
                 borderRadius: "20%",
                 overflow: "hidden",
+                marginTop: "25px",
               }}
             />
           </center>
 
           <p class="name"> Benjamin Yeung</p>
-          <h2 class="career" style={{ textAlign: "center" }}>
+          <h2
+            class="career"
+            style={{ textAlign: "center", fontWeight: "bold" }}
+          >
             Full Stack Web Developer 💻
           </h2>
           <br></br>

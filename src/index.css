@@ -31,7 +31,7 @@ code {
 
 .name{
   font-size: 4rem;
-  color: #044389;
+  color: rgb(61, 71, 204);;
   display: flex;
   justify-content: center;
   align-content:center
@@ -98,7 +98,7 @@ p {
   margin: 0px 10px;
 }
 
-.key-title, .resume, .name, .title, .contact, .education {
+.key-title, .resume, .name, .title, .contact, .education{
   font-weight: bold;
   font-family: 'Helvetica', cursive;
 }
@@ -160,18 +160,10 @@ p {
 
 .icon {
   padding: 10px;
-
+  width: 12%;
+  
 }
 
-.nav {
-  justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.navActive {
-  color: green;
-}
 
 .home{
   justify-content: left;
@@ -192,6 +184,11 @@ p {
   align-content: center;
 }
 
+.resume-icon {
+  padding: 10px;
+  width: 45%;
+  
+}
 
 .resume-container {
   margin: 20px 50px;
@@ -203,12 +200,26 @@ p {
 }
 
 .page-footer {
-  background-color: #F7D7D9;
-margin-top: auto;
+  background: #333;
+  position: relative;
+  color: white;
+padding: 25px 5px;
+  margin-top: auto;
+  width: 100%;
+  bottom: 0;
 
 }
 
 .nav {
-  background-color: #CFCBCA;
+  background-color: rgb(235, 230, 230);
+  color: white;
+
+  align-items: center;
+  width: 100%;
+  display: flex;
+  height: 100px;
+  justify-content: space-evenly;
+  font-size: 24px;
+  font-weight: bold;
 }
 

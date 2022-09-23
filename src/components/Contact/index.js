@@ -48,36 +48,59 @@ function ContactForm() {
 
   return (
     <section>
-      <h1 style={{ textAlign: "center" }}> Contact Me</h1>
+      <h1 style={{ textAlign: "center" }}> Contact Info</h1>
       <center>
         <div>
           <a href="https://github.com/BenYeung4">
             <img
               src="https://img.icons8.com/sf-regular/344/github.png"
               alt="github-logo"
-              className="icon is-64x64 mx-3"
+              className="icon"
             />
           </a>
           <a href="https://www.linkedin.com/in/benjaminyeung/">
             <img
               src="https://img.icons8.com/color/344/linkedin-circled--v1.png"
               alt="linkedin-logo"
-              className="icon is-64x64 mx-3"
+              className="icon"
             />
           </a>
           <a href="mailto:byeungis@gmail.com">
             <img
               src="https://img.icons8.com/color/344/gmail-new.png"
               alt="mail-logo"
-              className="icon is-64x64 mx-3"
+              className="icon"
             />
           </a>
         </div>
       </center>
 
-      <h1 style={{ textAlign: "center" }}>
-        Click above icons to send me a message!
-      </h1>
+      <div className="contactInfo" style={{ textAlign: "center" }}>
+        <h1>Click above icons to send me a message!</h1>
+        <br />
+        <br />
+        <h3>
+          Open to entry-level opportunities in the following rolse(but not
+          limited to)
+        </h3>
+        <br />
+        <ul
+          className="jobs"
+          style={{
+            fontWeight: "bold",
+            fontFamily: "Helvetica",
+            fontSize: "25px",
+            liststyle: "none",
+            listStyleType: "none",
+          }}
+        >
+          <li>Junior Developer</li>
+          <li>Front-End Developer</li>
+          <li>Back-End Developer</li>
+          <li>Junior Software Engineer</li>
+          <li>Support Engineer</li>
+        </ul>
+      </div>
     </section>
   );
 }
