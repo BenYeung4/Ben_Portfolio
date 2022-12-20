@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 
-const Header = () => {
+function Header() {
   //====Toggle menu ===//
   const [Toggle, showMenu] = useState(false);
 
@@ -63,5 +63,5 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+}
 export default Header;
