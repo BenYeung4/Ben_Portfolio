@@ -52,7 +52,7 @@
 /* Responsive typography*/
 @media screen and (max-width: 992px) {
   :root{
-    --big-font-size: 2.75rem;
+    --big-font-size: 2.55rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -147,10 +147,11 @@ img {
 /*===== BUTTONS =====*/
 .button {
   display: inline-block;
-  background-color: var(--container-color);
+  background-color: var(--title-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  color: white;
 }
 
 .button:hover{
