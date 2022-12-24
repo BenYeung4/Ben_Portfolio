@@ -7,6 +7,7 @@ function Social() {
         href="mailto:byeungis@gmail.com"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <i class="uil uil-envelope"></i>
       </a>
@@ -15,6 +16,7 @@ function Social() {
         href="https://www.linkedin.com/in/benjaminyeung/"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <i class="uil uil-linkedin-alt"></i>
       </a>
@@ -23,6 +25,7 @@ function Social() {
         href="https://github.com/BenYeung4"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <i class="uil uil-github-alt"></i>
       </a>
