@@ -84,7 +84,7 @@
     border-radius: 0.75rem;
     padding: 1.5rem;
     z-index: 1;
-    box-shadow: var(--box-shadow);
+
 }
 
 .contact__form-tag {

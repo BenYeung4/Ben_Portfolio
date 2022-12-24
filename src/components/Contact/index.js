@@ -42,7 +42,6 @@ function Contact() {
               </i>
 
               <h3 className="contact__card-title">Linkedin</h3>
-              <span className="contact__card-data">000-000-000</span>
 
               <a
                 href="https://www.linkedin.com/in/benjaminyeung/"
@@ -64,7 +63,6 @@ function Contact() {
               </i>
 
               <h3 className="contact__card-title">Github</h3>
-              <span className="contact__card-data">other email message</span>
 
               <a
                 href="https://github.com/BenYeung4"
@@ -112,7 +110,7 @@ function Contact() {
               />
             </div>
             <button className="button button--flex">
-              Send Message &nbsp;
+              Write me a Message &nbsp;
               <i class="uil uil-message"></i>
             </button>
           </form>
