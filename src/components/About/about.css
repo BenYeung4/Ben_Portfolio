@@ -22,7 +22,7 @@
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
-    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207)
+    box-shadow: var(--box-shadow);
 }
 
 .about__icon{

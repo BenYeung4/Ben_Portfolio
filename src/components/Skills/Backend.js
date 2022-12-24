@@ -8,7 +8,10 @@ function Backend() {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <img
+              src="https://img.icons8.com/fluency/48/null/node-js.png"
+              alt="icon"
+            />
 
             <div>
               <h3 className="skills__name">Node Js</h3>
@@ -17,7 +20,10 @@ function Backend() {
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <img
+              src="https://img.icons8.com/ios/48/null/express-js.png"
+              alt="icon"
+            />
 
             <div>
               <h3 className="skills__name">Express Js</h3>
@@ -26,7 +32,10 @@ function Backend() {
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <img
+              src="https://img.icons8.com/color/48/null/graphql.png"
+              alt="icon"
+            />
 
             <div>
               <h3 className="skills__name">Graphql</h3>
@@ -37,7 +46,10 @@ function Backend() {
 
         <div className="skills__group">
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <img
+              src="https://img.icons8.com/color/48/null/mongodb.png"
+              alt="icon"
+            />
 
             <div>
               <h3 className="skills__name">MongoDB</h3>
@@ -46,7 +58,10 @@ function Backend() {
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <img
+              src="https://img.icons8.com/color/48/null/mysql-logo.png"
+              alt="icon"
+            />
 
             <div>
               <h3 className="skills__name">MySQL</h3>
@@ -55,7 +70,10 @@ function Backend() {
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <img
+              src="https://img.icons8.com/color/48/null/heroku.png"
+              alt="icon"
+            />
 
             <div>
               <h3 className="skills__name">Heroku</h3>

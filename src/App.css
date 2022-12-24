@@ -46,7 +46,11 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
+  /*===shadow==*/
+--box-shadow:11px 12px 13px 12px rgb(207, 207, 207);
 }
+
 
 
 /* Responsive typography*/
@@ -153,7 +157,7 @@ img {
   font-weight: var(--font-medium);
   color: white;
   transition: transform 200ms ease-in;
-  box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
+  box-shadow: var(--box-shadow);
 }
 
 .button:hover{
