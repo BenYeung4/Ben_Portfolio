@@ -24,7 +24,7 @@ function Intro() {
         Columbia University. Currently on the search for more experience!
       </p>
       <a href="#contact" className="button button--flex">
-        Come say hi to me 🙋🏻‍♂️💬
+        Come say hi to me &nbsp;🙋🏻‍♂️💬
       </a>
     </div>
   );

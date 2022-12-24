@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
 import "./App.css";
 // import "bootstrap/dist/css/bootstrap.css";
@@ -16,6 +17,7 @@ function App() {
           <Home />
           <About />
           <Skills />
+          <Contact />
         </main>
         {/* <Footer /> */}
       </div>
