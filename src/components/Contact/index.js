@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+//email SMTP Server, should look for a better one
+import emailjs from "@emailjs/browser";
 import "./contact.css";
+
 //{ useState }
 // import { validateEmail } from "../../utils/helpers";
 // import { Row, Col } from "react-bootstrap";
-
 function Contact() {
+  const form = useRef();
+
+  const service_key = process.env.REACT_APP_SERVICE_Key;
+  const template_key = process.env.REACT_APP_TEMPLATE_Key;
+  const email_key = process.env.REACT_APP_EMAIL_Key;
+
+  function sendEmail(e) {
+    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs.sendForm(
+      `${service_key}`,
+      `${template_key}`,
+      e.target,
+      `${email_key}`
+    );
+    e.target.reset();
+  }
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Lets Grab a Coffee</h2>
@@ -78,7 +98,7 @@ function Contact() {
         <div className="contact__content">
           <h3 className="contact__title">Message Me</h3>
 
-          <form className="contact__form">
+          <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
