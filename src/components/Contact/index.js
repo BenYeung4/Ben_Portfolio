@@ -9,20 +9,25 @@ import "./contact.css";
 function Contact() {
   const form = useRef();
 
-  const service_key = process.env.REACT_APP_SERVICE_Key;
-  const template_key = process.env.REACT_APP_TEMPLATE_Key;
-  const email_key = process.env.REACT_APP_EMAIL_Key;
-
   function sendEmail(e) {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
-    emailjs.sendForm(
-      `${service_key}`,
-      `${template_key}`,
-      e.target,
-      `${email_key}`
-    );
-    e.target.reset();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_Key,
+        process.env.REACT_APP_TEMPLATE_Key,
+        e.target,
+        process.env.REACT_APP_EMAIL_Key
+      )
+      .then(
+        (result) => {
+          alert("Your message has been sent", result);
+          console.log(result.text);
+        },
+        (error) => {
+          console.log("Error", error);
+        }
+      );
   }
 
   return (
