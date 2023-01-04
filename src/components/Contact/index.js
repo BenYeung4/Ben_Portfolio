@@ -51,7 +51,7 @@ function Contact() {
               <span className="contact__card-data">byeungis@gmail.com</span>
 
               <a href="mailto:byeungis@gmail.com" className="contact__button">
-                Write me
+                Email is open for messages
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -74,7 +74,7 @@ function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Write me
+                Check my professional experience
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -97,7 +97,7 @@ function Contact() {
                 rel="noreferrer"
                 className="contact__button"
               >
-                Write me
+                Sources for my projects
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
