@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 //email SMTP Server, should look for a better one
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { Link } from "@react-email/link";
 
 //{ useState }
 // import { validateEmail } from "../../utils/helpers";
@@ -39,7 +40,12 @@ function Contact() {
           <h3 className="contact__title">My Contact Info</h3>
 
           <div className="contact__info">
-            <div className="contact__card">
+            <Link
+              className="contact__card"
+              href="mailto:byeungis@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="bx bx contact__card-icon">
                 <img
                   src="https://img.icons8.com/fluency/48/null/apple-mail.png"
@@ -54,11 +60,16 @@ function Contact() {
                 Email is open for messages
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
-            </div>
+            </Link>
           </div>
 
           <div className="contact__info">
-            <div className="contact__card">
+            <Link
+              className="contact__card"
+              href="https://www.linkedin.com/in/benjaminyeung/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="bx bx contact__card-icon">
                 <img
                   src="https://img.icons8.com/color/48/null/linkedin-2--v1.png"
@@ -69,19 +80,22 @@ function Contact() {
               <h3 className="contact__card-title">Linkedin</h3>
 
               <a
-                href="https://www.linkedin.com/in/benjaminyeung/"
                 className="contact__button"
-                target="_blank"
-                rel="noreferrer"
+                href="https://www.linkedin.com/in/benjaminyeung/"
               >
                 Check my professional experience
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
-            </div>
+            </Link>
           </div>
 
           <div className="contact__info">
-            <div className="contact__card">
+            <Link
+              className="contact__card"
+              href="https://github.com/BenYeung4"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="bx bx contact__card-icon">
                 <img
                   src="https://img.icons8.com/color/48/null/github--v1.png"
@@ -93,14 +107,12 @@ function Contact() {
 
               <a
                 href="https://github.com/BenYeung4"
-                target="_blank"
-                rel="noreferrer"
                 className="contact__button"
               >
                 Sources for my projects
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
-            </div>
+            </Link>
           </div>
         </div>
 
