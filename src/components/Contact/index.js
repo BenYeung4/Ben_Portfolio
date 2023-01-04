@@ -71,6 +71,8 @@ function Contact() {
               <a
                 href="https://www.linkedin.com/in/benjaminyeung/"
                 className="contact__button"
+                target="_blank"
+                rel="noreferrer"
               >
                 Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -91,6 +93,8 @@ function Contact() {
 
               <a
                 href="https://github.com/BenYeung4"
+                target="_blank"
+                rel="noreferrer"
                 className="contact__button"
               >
                 Write me
