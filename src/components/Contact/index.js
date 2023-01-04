@@ -136,7 +136,7 @@ function Contact() {
             </div>
             <button className="button button--flex">
               Write me a Message &nbsp;
-              <i class="uil uil-message"></i>
+              <i className="uil uil-message"></i>
             </button>
           </form>
         </div>

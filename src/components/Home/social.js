@@ -9,7 +9,7 @@ function Social() {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="uil uil-envelope"></i>
+        <i className="uil uil-envelope"></i>
       </a>
 
       <a
@@ -18,7 +18,7 @@ function Social() {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="uil uil-linkedin-alt"></i>
+        <i className="uil uil-linkedin-alt"></i>
       </a>
 
       <a
@@ -27,7 +27,7 @@ function Social() {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="uil uil-github-alt"></i>
+        <i className="uil uil-github-alt"></i>
       </a>
     </div>
   );

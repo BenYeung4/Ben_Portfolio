@@ -5,6 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Scroll from "./components/Scroll";
 import "./App.css";
 
 // import "bootstrap/dist/css/bootstrap.css";
@@ -12,16 +13,15 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div>
-        <Header />
-        <main className="main">
-          <Home />
-          <About />
-          <Skills />
-          <Contact />
-          <Footer />
-        </main>
-      </div>
+      <Header />
+      <main className="main">
+        <Home />
+        <About />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+      <Scroll />
     </>
   );
 }
