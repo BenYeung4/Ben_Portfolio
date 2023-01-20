@@ -20,8 +20,10 @@ function Intro() {
       </h1>
       <h3 className="home__subtitle">Fullstack Developer</h3>
       <p className="home__description">
-        Recently completed the Full Stack - Software Developer program at
-        Columbia University. Currently on the search for more experience!
+        Welcome to my portfolio! With a passion for creating innovative and
+        user-friendly web and mobile applications, I am excited to offer my
+        technical skills and professional experience to bring your vision to
+        life.👀
       </p>
       <a href="#contact" className="button button--flex">
         Come say hi to me &nbsp;🙋🏻‍♂️💬

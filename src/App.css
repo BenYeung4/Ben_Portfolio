@@ -157,13 +157,12 @@ img {
   font-weight: var(--font-medium);
   color: white;
   transition: transform 200ms ease-in;
-  box-shadow: var(--box-shadow);
 }
 
 .button:hover{
   background-color: var(--title-color-dark);
   transform: scale(1.1);
- 
+  box-shadow: var(--box-shadow);
 }
 
 .button__icon {

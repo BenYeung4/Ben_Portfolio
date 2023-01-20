@@ -23,8 +23,16 @@ function About() {
           <Info />
 
           <p className="about__description">
-            I'm a Full Stack Developer with an extensive background in mortgage
-            industry. 🏡
+            A recent Full-Stack graduate, I have leveraged my past work
+            experience in the Finance, Banking, and Mortgage industry, where I
+            honed my problem-solving and teamwork skills, to excel in my new
+            career as a full-stack developer.👨‍🎓
+            <br />
+            <br />
+            My portfolio demonstrates my ability to deliver clean efficient code
+            and work collaboratively. I am eager to take on new challenges and
+            create something amazing. I am excited for the opportunity to work
+            with you. Let's create something amazing together!👨‍💻
           </p>
 
           <a download="" href={Resume} className="button button--flex">
