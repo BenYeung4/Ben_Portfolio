@@ -4,7 +4,7 @@ function Social() {
   return (
     <div className="home__social">
       <a
-        href="mailto:byeungis@gmail.com"
+        href="mailto:byeungis@gmail.com?subject=Mail from Portfolio"
         className="home__social-icon"
         target="_blank"
         rel="noreferrer"

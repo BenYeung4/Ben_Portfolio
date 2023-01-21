@@ -26,13 +26,18 @@ function About() {
             A recent Full-Stack graduate, I have leveraged my past work
             experience in the Finance, Banking, and Mortgage industry, where I
             honed my problem-solving and teamwork skills, to excel in my new
-            career as a full-stack developer.👨‍🎓
+            career as a full-stack developer. 👨‍🎓
             <br />
             <br />
-            My portfolio demonstrates my ability to deliver clean efficient code
-            and work collaboratively. I am eager to take on new challenges and
-            create something amazing. I am excited for the opportunity to work
-            with you. Let's create something amazing together!👨‍💻
+            Making a career change can be a daunting task, but for me, it was an
+            opportunity to pursue my passion for creative innovative products.
+            After my past work experinece, I realized that my true calling was
+            in the field of technologies and software development. 💼
+            <br />
+            <br />I am eager to take on new challenges and apply my skills to
+            real-world projects and take on new challenges, especially excited
+            for the opportunity to work with you. Let's create something amazing
+            together! 👨‍💻
           </p>
 
           <a download="" href={Resume} className="button button--flex">
