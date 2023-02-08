@@ -7,8 +7,6 @@ Just my basic REACT profile, please have a look!
 
 ```
 
-![Capture](https://user-images.githubusercontent.com/52897163/187129009-f40c5758-e4e5-44d0-8662-9b485f0294b3.JPG)
-
 ## Deployed Application
 
 https://benyeung4.github.io/Ben_Portfolio/
