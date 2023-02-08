@@ -5,6 +5,8 @@
 ```
 Just my basic REACT profile, please have a look!
 
+Will add more in the upcoming future
+
 ```
 
 ## Deployed Application
