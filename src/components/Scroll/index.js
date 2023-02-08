@@ -10,7 +10,7 @@ function Scroll() {
   });
 
   return (
-    <a href="/#" className="scroll">
+    <a href="#home" className="scroll">
       <i className="uil uil-arrow-up scrollup__icon"></i>
     </a>
   );
