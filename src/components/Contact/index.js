@@ -1,117 +1,269 @@
-import React from "react";
+import React, { useRef } from "react";
+//email SMTP Server, should look for a better one
+import emailjs from "@emailjs/browser";
+import "./contact.css";
+import { Link } from "@react-email/link";
+
 //{ useState }
 // import { validateEmail } from "../../utils/helpers";
 // import { Row, Col } from "react-bootstrap";
-// import Resume from '../../assets/images "TYPE THE RESUME HERE".pdf"
+function Contact() {
+  const form = useRef();
 
-function ContactForm() {
-  //manage form data, empty out the initialize values
-  // const [formState, setFormState] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
-  //deconstructing the formState object into it's named properties
-  // const { name, email, message } = formState;
+  function sendEmail(e) {
+    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
-  //error message
-  // const [errorMessage, setErrorMessage] = useState("");
-
-  // function handleChange(e) {
-  //   if (e.target.name === "email") {
-  //     const isValid = validateEmail(e.target.value);
-
-  //     if (!isValid) {
-  //       setErrorMessage("Your email is invalid");
-  //     } else {
-  //       setErrorMessage("");
-  //     }
-  //   } else {
-  //     if (!e.target.value.length) {
-  //       setErrorMessage(`${e.target.name} is required.`);
-  //     } else {
-  //       setErrorMessage("");
-  //     }
-  //   }
-  //   //setFormState is updating formState for the property
-  //   if (!errorMessage) {
-  //     setFormState({ ...formState, [e.target.name]: e.target.value });
-  //   }
-  //   console.log("errorMessage", errorMessage);
-  // }
-
-  // //form submit
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   console.log(formState);
-  // }
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_Key,
+        process.env.REACT_APP_TEMPLATE_Key,
+        e.target,
+        process.env.REACT_APP_EMAIL_Key
+      )
+      .then(
+        (result) => {
+          alert("Your message has been sent", result);
+          console.log(result.text);
+        },
+        (error) => {
+          console.log("Error", error);
+        }
+      );
+  }
 
   return (
-    <section>
-      <h1 style={{ textAlign: "center", marginTop: "30px" }}> Contact Info</h1>
-      <center>
-        <div>
-          <a href="https://github.com/BenYeung4">
-            <img
-              src="https://img.icons8.com/sf-regular/344/github.png"
-              alt="github-logo"
-              className="icon"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/benjaminyeung/">
-            <img
-              src="https://img.icons8.com/color/344/linkedin-circled--v1.png"
-              alt="linkedin-logo"
-              className="icon"
-            />
-          </a>
-          <a href="mailto:byeungis@gmail.com">
-            <img
-              src="https://img.icons8.com/color/344/gmail-new.png"
-              alt="mail-logo"
-              className="icon"
-            />
-          </a>
-        </div>
-      </center>
+    <section className="contact section" id="contact">
+      <h2 className="section__title">Lets Grab a Coffee</h2>
+      <span className="section__subtitle">Contact Me</span>
+      <div className="contact__container container grid">
+        <div className="contact__content">
+          <h3 className="contact__title">My Contact Info</h3>
 
-      <div className="contactInfo" style={{ textAlign: "center" }}>
-        <h1>Click above icons to send me a message!</h1>
-        <br />
-        <br />
-        <h3>
-          Open to entry-level opportunities in the following rolse(but not
-          limited to)
-        </h3>
-        <br />
-        <ul
-          className="jobs"
-          style={{
-            fontWeight: "bold",
-            fontFamily: "Helvetica",
-            fontSize: "25px",
-            liststyle: "none",
-            listStyleType: "none",
-          }}
-        >
-          <li>Junior Developer</li>
-          <li>Front-End Developer</li>
-          <li>Back-End Developer</li>
-          <li>Junior Software Engineer</li>
-          <li>Support Engineer</li>
-        </ul>
+          <div className="contact__info">
+            <Link
+              className="contact__card"
+              href="mailto:byeungis@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="bx bx contact__card-icon">
+                <img
+                  src="https://img.icons8.com/fluency/48/null/apple-mail.png"
+                  alt="contact-icon"
+                />
+              </i>
+
+              <h3 className="contact__card-title">Email</h3>
+              <span className="contact__card-data">byeungis@gmail.com</span>
+
+              <a href="mailto:byeungis@gmail.com" className="contact__button">
+                Email is open for messages
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </Link>
+          </div>
+
+          <div className="contact__info">
+            <Link
+              className="contact__card"
+              href="https://www.linkedin.com/in/benjaminyeung/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="bx bx contact__card-icon">
+                <img
+                  src="https://img.icons8.com/color/48/null/linkedin-2--v1.png"
+                  alt="contact-icon"
+                />
+              </i>
+
+              <h3 className="contact__card-title">Linkedin</h3>
+
+              <a
+                className="contact__button"
+                href="https://www.linkedin.com/in/benjaminyeung/"
+              >
+                Check my professional experience
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </Link>
+          </div>
+
+          <div className="contact__info">
+            <Link
+              className="contact__card"
+              href="https://github.com/BenYeung4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="bx bx contact__card-icon">
+                <img
+                  src="https://img.icons8.com/color/48/null/github--v1.png"
+                  alt="contact-icon"
+                />
+              </i>
+
+              <h3 className="contact__card-title">Github</h3>
+
+              <a
+                href="https://github.com/BenYeung4"
+                className="contact__button"
+              >
+                Sources for my projects
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </Link>
+          </div>
+        </div>
+
+        <div className="contact__content">
+          <h3 className="contact__title">Message Me</h3>
+
+          <form className="contact__form" ref={form} onSubmit={sendEmail}>
+            <div className="contact__form-div">
+              <label className="contact__form-tag">Name</label>
+              <input
+                type="text"
+                name="name"
+                className="contact__form-input"
+                placeholder="Enter Name"
+              />
+            </div>
+
+            <div className="contact__form-div">
+              <label className="contact__form-tag">Email</label>
+              <input
+                type="email"
+                name="email"
+                className="contact__form-input"
+                placeholder="Enter Email"
+              />
+            </div>
+
+            <div className="contact__form-div contact__form-area">
+              <label className="contact__form-tag">Subject</label>
+              <textarea
+                name="subject"
+                cols="30"
+                rows="10"
+                className="contact__form-input"
+                placeholder="Enter Subject"
+              />
+            </div>
+            <button className="button button--flex">
+              Write me a Message &nbsp;
+              <i className="uil uil-message"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </section>
   );
 }
 
-export default ContactForm;
+export default Contact;
+
+//manage form data, empty out the initialize values
+// const [formState, setFormState] = useState({
+//   name: "",
+//   email: "",
+//   message: "",
+// });
+//deconstructing the formState object into it's named properties
+// const { name, email, message } = formState;
+
+//error message
+// const [errorMessage, setErrorMessage] = useState("");
+
+// function handleChange(e) {
+//   if (e.target.name === "email") {
+//     const isValid = validateEmail(e.target.value);
+
+//     if (!isValid) {
+//       setErrorMessage("Your email is invalid");
+//     } else {
+//       setErrorMessage("");
+//     }
+//   } else {
+//     if (!e.target.value.length) {
+//       setErrorMessage(`${e.target.name} is required.`);
+//     } else {
+//       setErrorMessage("");
+//     }
+//   }
+//   //setFormState is updating formState for the property
+//   if (!errorMessage) {
+//     setFormState({ ...formState, [e.target.name]: e.target.value });
+//   }
+//   console.log("errorMessage", errorMessage);
+// }
+
+// //form submit
+// function handleSubmit(e) {
+//   e.preventDefault();
+//   console.log(formState);
+// }
+
+/* <h1 style={{ textAlign: "center", marginTop: "30px" }}> Contact Info</h1>
+<center>
+  <div>
+    <a href="https://github.com/BenYeung4">
+      <img
+        src="https://img.icons8.com/sf-regular/344/github.png"
+        alt="github-logo"
+        className="icon"
+      />
+    </a>
+    <a href="https://www.linkedin.com/in/benjaminyeung/">
+      <img
+        src="https://img.icons8.com/color/344/linkedin-circled--v1.png"
+        alt="linkedin-logo"
+        className="icon"
+      />
+    </a>
+    <a href="mailto:byeungis@gmail.com">
+      <img
+        src="https://img.icons8.com/color/344/gmail-new.png"
+        alt="mail-logo"
+        className="icon"
+      />
+    </a>
+  </div>
+</center>
+
+<div className="contactInfo" style={{ textAlign: "center" }}>
+  <h1>Click above icons to send me a message!</h1>
+  <br />
+  <br />
+  <h3>
+    Open to entry-level opportunities in the following rolse(but not
+    limited to)
+  </h3>
+  <br />
+  <ul
+    className="jobs"
+    style={{
+      fontWeight: "bold",
+      fontFamily: "Helvetica",
+      fontSize: "25px",
+      liststyle: "none",
+      listStyleType: "none",
+    }}
+  >
+    <li>Junior Developer</li>
+    <li>Front-End Developer</li>
+    <li>Back-End Developer</li>
+    <li>Junior Software Engineer</li>
+    <li>Support Engineer</li>
+  </ul>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</section> */
 
 // return (
 //     <section>

@@ -1,13 +1,57 @@
 import React from "react";
+import "./about.css";
+import Info from "./info";
 
 //import of images
-import profilePhoto from "../../assets/images/profile.jpg";
+import profilePhoto from "../../assets/images/secondary photo.jpg";
 
-import { Col } from "react-bootstrap";
+//resume
+import Resume from "../../assets/images/Resume.pdf";
+
+// import { Col } from "react-bootstrap";
 
 function About() {
   return (
-    <section className="title">
+    <section className="about section" id="about">
+      <h2 className="section__title">About Me</h2>
+      <span className="section__subtitle">My Introduction</span>
+
+      <div className="about__container container grid">
+        <img src={profilePhoto} alt="" className="about__img" />
+
+        <div className="about__data">
+          <Info />
+
+          <p className="about__description">
+            A recent Full-Stack graduate, I have leveraged my past work
+            experience in the Finance, Banking, and Mortgage industry, where I
+            honed my problem-solving and teamwork skills, to excel in my new
+            career as a full-stack developer. 👨‍🎓
+            <br />
+            <br />
+            Making a career change can be a daunting task, but for me, it was an
+            opportunity to pursue my passion for creative innovative products.
+            After my past work experinece, I realized that my true calling was
+            in the field of technologies and software development. 💼
+            <br />
+            <br />I am eager to take on new challenges and apply my skills to
+            real-world projects and take on new challenges, especially excited
+            for the opportunity to work with you. Let's create something amazing
+            together! 👨‍💻
+          </p>
+
+          <a download="" href={Resume} className="button button--flex">
+            Download Resume 📄
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default About;
+
+/* <section className="title">
       <div className="row justify-content-center" id="about-container">
         <Col lg={6} md={12}>
           <center>
@@ -65,8 +109,4 @@ function About() {
           </p>
         </Col>
       </div>
-    </section>
-  );
-}
-
-export default About;
+    </section> */
