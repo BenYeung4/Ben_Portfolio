@@ -43,10 +43,9 @@
         bottom: 4rem;
     }
 }
-
   /*for small devices*/
   @media screen and (max-width: 350px){  
     .scroll {
         right: 1rem;
     }
-    }
+}
