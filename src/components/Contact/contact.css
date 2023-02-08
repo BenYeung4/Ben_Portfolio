@@ -25,7 +25,6 @@
     padding: 1rem;
     border-radius: 0.75rem;
     text-align: center;
-    box-shadow: var(--box-shadow);
 }
 
 .contact__card-title,
@@ -64,6 +63,7 @@
 .contact__card:hover {
     transform: scale(1.05);
     transition: .3s;
+    box-shadow: var(--box-shadow);
 }
 .contact__form {
     width: 360px;

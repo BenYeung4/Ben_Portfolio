@@ -7,7 +7,7 @@ function WorkItems({ item }) {
       <h3 className="work__title" style={{ textAlign: "center" }}>
         {item.name}
       </h3>
-      <h9 className="work__description">{item.description}</h9>
+      <h4 className="work__description">{item.description}</h4>
       <h5 className="work__skills">{item.skills}</h5>
       <div className="portfolio_icon">
         <a
@@ -16,7 +16,7 @@ function WorkItems({ item }) {
           rel="noreferrer"
           className="github__icon"
         >
-          <i class="uil uil-github-alt"></i>
+          <i className="uil uil-github-alt"></i>
         </a>
         <a
           href={item.deployedapp}
@@ -24,7 +24,7 @@ function WorkItems({ item }) {
           rel="noreferrer"
           className="deployproject_icon"
         >
-          <i class="uil uil-location-arrow"></i>
+          <i className="uil uil-location-arrow"></i>
         </a>
       </div>
     </div>

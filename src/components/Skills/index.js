@@ -2,6 +2,7 @@ import React from "react";
 import "./skills.css";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
+import Language from "./Language";
 
 function Skills() {
   return (
@@ -10,6 +11,7 @@ function Skills() {
       <span className="section__subtitle">My Technical Level</span>
 
       <div className="skills__container container grid">
+        <Language />
         <Frontend />
         <Backend />
       </div>

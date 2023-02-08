@@ -15,14 +15,8 @@ function Footer() {
           </li>
 
           <li>
-            <a href="#Portfolio" className="footer__link">
-              Projects
-            </a>
-          </li>
-
-          <li>
-            <a href="randomlink" className="footer__link">
-              random subject for now
+            <a href="#portfolio" className="footer__link">
+              Portfolio
             </a>
           </li>
         </ul>

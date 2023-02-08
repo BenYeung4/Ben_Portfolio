@@ -20,7 +20,10 @@
 .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
+    font-size: 25px;
 }
+
+
 
 .nav__list {
     display:flex;
